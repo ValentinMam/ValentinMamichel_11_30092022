@@ -1,14 +1,16 @@
-import React from 'react';
-
-import './not-found.css';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import './not-found.css'
 
 class Notfound extends React.Component {
-
   render() {
     return (
-      <p>not-found works!</p>
+      <div className="error">
+        <span>404</span>
+        <p>Oups! La page que vous demandez n&apos;existe pas.</p>
+        <NavLink to="/">Retourner sur la page d’accueil</NavLink>
+      </div>
     )
   }
-
 }
-export default Notfound; 
+export default Notfound
