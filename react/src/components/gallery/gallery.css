@@ -1,0 +1,21 @@
+.gallery {
+  background: #f7f7f7;
+  border-radius: 2vw;
+}
+.gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2vw;
+  padding: 3vw;
+}
+@media screen and (max-width: 426px) {
+  .gallery {
+    background: #fff;
+  }
+  .gallery ul {
+    flex-direction: column;
+    gap: 4vw;
+    padding: 0;
+  }
+}

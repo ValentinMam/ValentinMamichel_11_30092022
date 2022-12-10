@@ -1,0 +1,14 @@
+/****** Housing Page ******/
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw 0;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+aside {
+  width: 47%;
+}

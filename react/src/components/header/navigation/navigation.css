@@ -1,0 +1,55 @@
+.navigation {
+  width: 250px;
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
+.navigation ul a {
+  text-decoration: none;
+  color: #ff6060;
+}
+.navigation ul a li {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  cursor: pointer;
+}
+.navigation ul .nav-active {
+  position: relative;
+}
+.navigation ul .nav-active::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #ff6060;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: anim 0.6s ease forwards;
+}
+@keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .navigation {
+    width: 140px;
+  }
+  .navigation ul a li {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .navigation {
+    width: 200px;
+  }
+  .navigation ul a li {
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}

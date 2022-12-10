@@ -1,0 +1,30 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 120px;
+  background: #000;
+  margin-top: 3vw;
+  padding-top: 4vw;
+}
+footer img {
+  width: 95px;
+  height: 30px;
+  margin-bottom: 1vw;
+}
+footer p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+}
+@media screen and (max-width: 426px) {
+  footer p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  footer p {
+    font-size: 15px;
+  }
+}
