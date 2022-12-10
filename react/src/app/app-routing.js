@@ -1,31 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import Home from './modules/general/home/home'
 import Notfound from './modules/general/not-found/not-found'
-
+import Housing from './modules/general/housing/housing'
 import About from './modules/general/about/about'
-import Login from './modules/general/login/login'
-import Signup from './modules/general/signup/signup'
 
-import Contact from './modules/general/contact/contact'
+// import Login from './modules/general/login/login'
+// import Signup from './modules/general/signup/signup'
+// import Contact from './modules/general/contact/contact'
 
-class AppRouting extends React.Component {
-  render() {
-    return (
-      <Routes>
-        <Route index element={<Home />} />
+function AppRouting() {
+  const [data, setData] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
-        <Route path="about/*" element={<About />} />
-        <Route path="login/*" element={<Login />} />
-        <Route path="signup/*" element={<Signup />} />
+  useEffect(() => {
+    fetch('/apartements.json')
+      .then((res) => {
+        return res.json()
+      })
+      .then((res) => {
+        setData(res)
+        setIsLoading(false)
+      })
+  }, [])
 
-        <Route path="contact/*" element={<Contact />} />
-
-        <Route path="*" element={<Notfound />} />
-      </Routes>
-    )
-  }
+  return (
+    <>
+      {!isLoading && (
+        <Routes>
+          <Route path="/" element={<Home data={data} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/housing/:id" element={<Housing data={data} />} />
+          <Route path="/housing/*" element={<Notfound />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      )}
+    </>
+  )
 }
 
 export default AppRouting
