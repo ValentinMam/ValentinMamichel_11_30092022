@@ -1,14 +1,16 @@
-import React from 'react';
-import './home.css';
+import './home.css'
+import Banner from '../../../../components/banner/banner'
+import Gallery from '../../../../components/gallery/gallery'
 
-class Home extends React.Component {
-
-  render() {
-    return (
-      <p>home works!</p>
-    )
-  }
-
+function Home(props) {
+  return (
+    <>
+      <div className="home">
+        <Banner />
+        <Gallery data={props.data} />
+      </div>
+    </>
+  )
 }
 
-export default Home; 
+export default Home
