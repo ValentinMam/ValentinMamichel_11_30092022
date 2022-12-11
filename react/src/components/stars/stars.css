@@ -1,0 +1,27 @@
+.star-rating {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1vw;
+}
+.star-rating svg {
+  font-size: x-large;
+  padding-right: 2px;
+}
+.star-rating .active-color {
+  color: #ff6060;
+}
+.star-rating .inactive-color {
+  color: #e3e3e3;
+}
+@media screen and (max-width: 426px) {
+  .star-rating svg {
+    font-size: large;
+    padding-right: 1px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .star-rating svg {
+    font-size: large;
+    padding-right: 1px;
+  }
+}

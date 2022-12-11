@@ -1,0 +1,36 @@
+.host {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.host h5 {
+  color: #ff6060;
+  padding-right: 1vw;
+  text-align: right;
+  width: 50%;
+  margin: 0;
+  font-size: 18px;
+}
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 426px) {
+  .host h5 {
+    font-size: 12px;
+  }
+  .host img {
+    width: 54px;
+    height: 54px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .host h5 {
+    font-size: 14px;
+  }
+  .host img {
+    width: 56px;
+    height: 56px;
+  }
+}

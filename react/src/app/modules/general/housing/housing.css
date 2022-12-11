@@ -1,4 +1,11 @@
 /****** Housing Page ******/
+.housing-page {
+  align-items: center;
+  width: 100%;
+
+  padding: 0 2vw;
+}
+
 main {
   display: flex;
   justify-content: space-between;

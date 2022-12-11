@@ -1,0 +1,27 @@
+.tags {
+  display: flex;
+  margin-bottom: 10px;
+}
+.tags .tag {
+  background: #ff6060;
+  color: #fff;
+  margin-right: 1vw;
+  padding: 0.4vw 3vw;
+  border-radius: 1vw;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media screen and (max-width: 426px) {
+  .tags .tag {
+    font-size: 10px;
+    margin-right: 2vw;
+    padding: 0.8vw 4vw;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .tags .tag {
+    font-size: 12px;
+    margin-right: 2vw;
+    padding: 0.8vw 4vw;
+  }
+}
