@@ -2,9 +2,51 @@ body {
   max-width: 1024px;
   margin: auto;
   padding: 5vw;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
 }
-
+/****** Housing Page ******/
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vw 0;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+aside {
+  width: 47%;
+}
+/****** About Page ******/
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+/****** Error Page ******/
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 7vw;
+  color: #ff6060;
+  font-weight: bold;
+}
+.error span {
+  font-size: 200px;
+}
+.error p {
+  font-size: 25px;
+}
+.error a {
+  font-size: 18px;
+  margin-top: 10vw;
+  color: #ff6060;
+}
 @media screen and (max-width: 426px) {
   /****** Housing Page ******/
   /****** About Page ******/
