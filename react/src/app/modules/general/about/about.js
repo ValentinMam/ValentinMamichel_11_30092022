@@ -1,5 +1,3 @@
-import './about.css'
-
 import AboutBanner from '../../../../components/about-banner/about-banner'
 import Dropdown from '../../../../components/dropdown/dropdown'
 

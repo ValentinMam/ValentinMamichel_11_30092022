@@ -1,4 +1,3 @@
-import './home.css'
 import Banner from '../../../../components/banner/banner'
 import Gallery from '../../../../components/gallery/gallery'
 

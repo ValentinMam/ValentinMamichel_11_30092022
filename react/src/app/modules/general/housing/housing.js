@@ -1,5 +1,3 @@
-import './housing.css'
-
 import { useParams, Navigate } from 'react-router-dom'
 import Carousel from '../../../../components/carousel/carousel'
 import Locality from '../../../../components/locality/locality'
